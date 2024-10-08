@@ -1,3 +1,4 @@
+import 'package:android_projects/gesture_ink.dart';
 import 'package:flutter/material.dart';
 class list_view101 extends StatefulWidget {
   const list_view101({super.key});
@@ -11,14 +12,18 @@ class _list_view101State extends State<list_view101> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-reverse: false,
+
+
 
         children: [
 
         ListTile(
           leading: Icon(Icons.home),
           title: Text("First"),
-          trailing: Icon(Icons.info),
+          trailing: IconButton(
+            onPressed: (){},
+            icon: Icon(Icons.info),
+          )
 
         ),
           ListTile(

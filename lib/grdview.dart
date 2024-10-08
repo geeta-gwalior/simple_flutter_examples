@@ -13,45 +13,45 @@ class _grdState extends State<grd> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GridView.builder(gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 200),
-
-        itemBuilder: (context,index){
-
-        return Container(color: col[index],margin: EdgeInsets.all(20.0),);
-
-
-
-
-      },
-      itemCount: col.length,
-
-
-      ),
-
-
-
-
-      // body: Padding(
-      //   padding: const EdgeInsets.all(8.0),
-      //   child: GridView.extent(maxCrossAxisExtent:300,
-      //   crossAxisSpacing: 10,
-      //   mainAxisSpacing: 20,
-      //   children: [
-      //     Container(color:col[0],
+      // body: GridView.builder(gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 200),
+      //
+      //   itemBuilder: (context,index){
+      //
+      //   return Container(color: col[index],margin: EdgeInsets.all(20.0),);
       //
       //
-      //     ),
-      //     Container(color:col[1]),
-      //     Container(color:col[2]),
-      //     Container(color:col[3]),
-      //     Container(color:col[4]),
-      //     Container(color:col[5]),
-      //     Container(color:col[6]),
-      //     Container(color:col[7]),
       //
-      //   ],
-      //   ),
+      //
+      // },
+      // itemCount: col.length,
+      //
+      //
       // ),
+
+
+
+
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: GridView.count(crossAxisCount: 3,
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 20,
+        children: [
+          Container(color:col[0],
+
+
+          ),
+          Container(color:col[1]),
+          Container(color:col[2]),
+          Container(color:col[3]),
+          Container(color:col[4]),
+          Container(color:col[5]),
+          Container(color:col[6]),
+          Container(color:col[7]),
+
+        ],
+        ),
+      ),
 
     );
   }

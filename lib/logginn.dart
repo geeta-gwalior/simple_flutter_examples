@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'adddata.dart';
+import '../../../AndroidStudioProjects/simple_gemini_ai/lib/adddata.dart';
 
 class Authenticationscreen extends StatefulWidget {
   @override

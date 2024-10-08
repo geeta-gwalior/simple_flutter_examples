@@ -128,7 +128,8 @@ void selected(int v){
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/imgs/rock.png',height: 200,width: 200,)
+              Image.asset('assets/imgs/rock.png',height: 200,width: 200,),
+              CircularProgressIndicator(),
             ],
           ),
         ),

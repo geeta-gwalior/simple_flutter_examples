@@ -10,6 +10,7 @@ class listb extends StatefulWidget {
 class _listbState extends State<listb> {
 
   List<String> l=["aaa","bbb","ccc","ddd"];
+  //List<Colors> cl=[Colors.red,];
 
   @override
   Widget build(BuildContext context) {

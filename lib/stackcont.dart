@@ -1,4 +1,4 @@
-import 'package:android_projects/adddata.dart';
+
 import 'package:android_projects/cls2.dart';
 import 'package:flutter/material.dart';
 
